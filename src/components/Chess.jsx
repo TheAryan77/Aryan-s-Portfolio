@@ -1,0 +1,494 @@
+import React, { useRef } from 'react'
+import { Float, useGLTF } from '@react-three/drei'
+import {gsap} from 'gsap'
+import {ScrollTrigger} from 'gsap/ScrollTrigger'
+import { useGSAP } from '@gsap/react'
+gsap.registerPlugin(ScrollTrigger)
+const Chess =(props)=> {
+  const { nodes, materials } = useGLTF('/models/chess.glb')
+  return (
+    <Float  dispose={null}>
+    <group {...props}>
+      <group scale={0.01}>
+        <group rotation={[0, -Math.PI / 5, 0]} scale={100}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Circle_white_0.geometry}
+            material={materials.white}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Circle_Coppper_0.geometry}
+            material={materials.Coppper}
+          />
+        </group>
+        <group rotation={[-Math.PI / 2, 0, 0]} scale={1000}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Circle011_black_0.geometry}
+            material={materials.black}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Circle011_gold_0.geometry}
+            material={materials.gold}
+          />
+        </group>
+        <group rotation={[-Math.PI / 2, 0, 0]} scale={1000}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Circle012_black_0.geometry}
+            material={materials.black}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Circle012_gold_0.geometry}
+            material={materials.gold}
+          />
+        </group>
+        <group rotation={[-Math.PI / 2, 0, 0]} scale={1000}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Circle013_black_0.geometry}
+            material={materials.black}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Circle013_gold_0.geometry}
+            material={materials.gold}
+          />
+        </group>
+        <group rotation={[-Math.PI / 2, 0, 0]} scale={1000}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Circle014_black_0.geometry}
+            material={materials.black}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Circle014_gold_0.geometry}
+            material={materials.gold}
+          />
+        </group>
+        <group rotation={[-Math.PI / 2, 0, 0]} scale={1000}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Circle015_black_0.geometry}
+            material={materials.black}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Circle015_gold_0.geometry}
+            material={materials.gold}
+          />
+        </group>
+        <group rotation={[-Math.PI / 2, 0, 0]} scale={1000}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Circle016_black_0.geometry}
+            material={materials.black}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Circle016_gold_0.geometry}
+            material={materials.gold}
+          />
+        </group>
+        <group rotation={[-Math.PI / 2, 0, 0]} scale={1000}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Circle017_black_0.geometry}
+            material={materials.black}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Circle017_gold_0.geometry}
+            material={materials.gold}
+          />
+        </group>
+        <group rotation={[-Math.PI / 2, 0, 0]} scale={1000}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Circle018_black_0.geometry}
+            material={materials.black}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Circle018_gold_0.geometry}
+            material={materials.gold}
+          />
+        </group>
+        <group rotation={[-Math.PI / 2, 0, 0]} scale={1000}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Circle019_white_0.geometry}
+            material={materials.white}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Circle019_Coppper_0.geometry}
+            material={materials.Coppper}
+          />
+        </group>
+        <group rotation={[-Math.PI / 2, 0, 0]} scale={1000}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Circle020_white_0.geometry}
+            material={materials.white}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Circle020_Coppper_0.geometry}
+            material={materials.Coppper}
+          />
+        </group>
+        <group rotation={[-Math.PI / 2, 0, 0]} scale={1000}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Circle021_white_0.geometry}
+            material={materials.white}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Circle021_Coppper_0.geometry}
+            material={materials.Coppper}
+          />
+        </group>
+        <group rotation={[-Math.PI / 2, 0, 0]} scale={1000}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Circle022_white_0.geometry}
+            material={materials.white}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Circle022_Coppper_0.geometry}
+            material={materials.Coppper}
+          />
+        </group>
+        <group rotation={[-Math.PI / 2, 0, 0]} scale={1000}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Circle023_white_0.geometry}
+            material={materials.white}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Circle023_Coppper_0.geometry}
+            material={materials.Coppper}
+          />
+        </group>
+        <group rotation={[-Math.PI / 2, 0, 0]} scale={1000}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Circle024_white_0.geometry}
+            material={materials.white}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Circle024_Coppper_0.geometry}
+            material={materials.Coppper}
+          />
+        </group>
+        <group rotation={[-Math.PI / 2, 0, 0]} scale={1000}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Circle025_white_0.geometry}
+            material={materials.white}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Circle025_Coppper_0.geometry}
+            material={materials.Coppper}
+          />
+        </group>
+        <group rotation={[-Math.PI / 2, 0, 0]} scale={1000}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Circle001_white_0.geometry}
+            material={materials.white}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Circle001_Coppper_0.geometry}
+            material={materials.Coppper}
+          />
+        </group>
+        <group rotation={[-Math.PI / 2, 0, 0]} scale={1000}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Circle026_black_0.geometry}
+            material={materials.black}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Circle026_Coppper_0.geometry}
+            material={materials.Coppper}
+          />
+        </group>
+        <group rotation={[-Math.PI / 2, 0, 0]} scale={1000}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Circle031_white_0.geometry}
+            material={materials.white}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Circle031_Coppper_0.geometry}
+            material={materials.Coppper}
+          />
+        </group>
+        <group rotation={[-Math.PI / 2, 0, 0]} scale={1000}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Circle036_black_0.geometry}
+            material={materials.black}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Circle036_Coppper_0.geometry}
+            material={materials.Coppper}
+          />
+        </group>
+        <group rotation={[-Math.PI / 2, 0, 0]} scale={1000}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Circle003_white_0.geometry}
+            material={materials.white}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Circle003_Coppper_0.geometry}
+            material={materials.Coppper}
+          />
+        </group>
+        <group rotation={[-Math.PI / 2, 0, 0]} scale={1000}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Circle032_white_0.geometry}
+            material={materials.white}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Circle032_Coppper_0.geometry}
+            material={materials.Coppper}
+          />
+        </group>
+        <group rotation={[-Math.PI / 2, 0, 0]} scale={1000}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Circle027_black_0.geometry}
+            material={materials.black}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Circle027_Coppper_0.geometry}
+            material={materials.Coppper}
+          />
+        </group>
+        <group rotation={[-Math.PI / 2, 0, 0]} scale={1000}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Circle028_black_0.geometry}
+            material={materials.black}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Circle028_Coppper_0.geometry}
+            material={materials.Coppper}
+          />
+        </group>
+        <group rotation={[-Math.PI / 2, 0, 0]} scale={1000}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Circle008_Coppper_0.geometry}
+            material={materials.Coppper}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Circle008_white_0.geometry}
+            material={materials.white}
+          />
+        </group>
+        <group rotation={[-Math.PI / 2, 0, 0]} scale={1000}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Circle029_Coppper_0.geometry}
+            material={materials.Coppper}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Circle029_black_0.geometry}
+            material={materials.black}
+          />
+        </group>
+        <group rotation={[-Math.PI / 2, 0, 0]} scale={1000}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Circle007_white_0.geometry}
+            material={materials.white}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Circle007_Coppper_0.geometry}
+            material={materials.Coppper}
+          />
+        </group>
+        <group rotation={[-Math.PI / 2, 0, 0]} scale={1000}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Circle035_black_0.geometry}
+            material={materials.black}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Circle035_Coppper_0.geometry}
+            material={materials.Coppper}
+          />
+        </group>
+        <group rotation={[-Math.PI / 2, 0, 0]} scale={1000}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Circle009_white_0.geometry}
+            material={materials.white}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Circle009_Coppper_0.geometry}
+            material={materials.Coppper}
+          />
+        </group>
+        <group rotation={[-Math.PI / 2, 0, 0]} scale={1000}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Circle030_black_0.geometry}
+            material={materials.black}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Circle030_Coppper_0.geometry}
+            material={materials.Coppper}
+          />
+        </group>
+        <group rotation={[-Math.PI / 2, 0, 0]} scale={1000}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Circle033_white_0.geometry}
+            material={materials.white}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Circle033_Coppper_0.geometry}
+            material={materials.Coppper}
+          />
+        </group>
+        <group rotation={[-Math.PI / 2, 0, 0]} scale={1000}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Circle034_black_0.geometry}
+            material={materials.black}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Circle034_Coppper_0.geometry}
+            material={materials.Coppper}
+          />
+        </group>
+        <group rotation={[-Math.PI / 2, 0, 0]} scale={1000}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Plane_light_0.geometry}
+            material={materials.light}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Plane_dark_0.geometry}
+            material={materials.dark}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Plane_gold_0.geometry}
+            material={materials.gold}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Plane_Shedua_0.geometry}
+            material={materials.Shedua}
+          />
+        </group>
+      </group>
+    </group>
+    </Float>
+  )
+}
+
+useGLTF.preload('/models/chess.glb')
+export default Chess;
