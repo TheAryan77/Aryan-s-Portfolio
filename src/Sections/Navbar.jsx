@@ -32,10 +32,7 @@ const Navbar = () => {
                     <img src={isopen  ? "assets/close.svg": "assets/menu.svg" } alt="toggle" className="w-6 h-6" />
                 </button>
                 <nav className="sm:flex hidden">
-                
-                <a href="/" className="text-neutral-400 font-bold text-xl hover:text-white transition-colors">
-                Portfolio: Level 1 
-                </a>
+              
                 </nav>
             </div>
         </div>
