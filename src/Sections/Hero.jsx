@@ -73,7 +73,7 @@ const Hero = () => {
       </div>
       <div className='absolute bottom-10 left-0 right-0 w-full z-10 c-space'>
         <a href="#contact" className='w-fit'>
-          <HoverButton name={<><span>Aryan's Stellar Journey</span><span className='thinking-emoji'><i>&#x1f30c;
+          <HoverButton name={<><span>Aryan's Stellar Journey (click here!) </span><span className='thinking-emoji'><i>&#x1f30c;
             </i></span></>} 
           isBeam containerClass='sm:w-fit w-fit w-full sm:min-w-96'/>
         </a>
